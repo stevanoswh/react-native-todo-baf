@@ -7,7 +7,7 @@ export default function WelcomeScreen() {
   const navigation = useNavigation();
 
   const handleContinue = () => {
-    navigation.replace('MainTabs'); // Replaces the stack so they don't go back to Welcome
+    navigation.replace('Login'); // Replaces the stack so they don't go back to Welcome
   };
 
   return (

@@ -11,8 +11,8 @@ export default function LoginScreen() {
   const handleLogin = async () => {
     try {
       const userData = await AuthService.login(email, password);
-      console.log('Login successful:', userData);
-      navigation.navigate('Welcome');
+      console.log('Login successful:');
+      navigation.navigate('MainTabs');
     } catch (error) {
       Alert.alert('Login Failed', 'Invalid email or password.');
     }
